@@ -83,6 +83,57 @@
          "patterns": ["do you have any clinic details", "clinic details","national hospital clinic details","i need clinic details"],
          "responses": ["clinic"],
          "context_set": ""
+        },
+        {"tag": "AI",
+         "patterns": ["What is AI?", "What is artificial intelligence"],
+         "responses": ["Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", "AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+         "context_set": ""
+        }
+        ,
+        {"tag": "Interest",
+         "patterns": ["What are your interests"],
+         "responses": ["I am interested in all kinds of things. We can talk about anything!", "I am interested in a wide variety of topics, and read rather a lot."],
+         "context_set": ""
+        },
+        {"tag": "eat",
+         "patterns": ["What can you eat"],
+         "responses": ["I consume RAM, and binary digits."],
+         "context_set": ""
+        },
+        {"tag": "bro",
+         "patterns": ["Do you have any brothers"],
+         "responses": ["Yes, my brother is Chalindu"],
+         "context_set": ""
+        },
+        {"tag": "joke",
+         "patterns": ["Tell me a joke", "I want to hear a joke"],
+         "responses": ["Did you hear the one about the mountain goats in the andes? It was 'ba a a a a a d'.", "I never forget a face, but in your case I'll make an exception.", "It is better to be silent and be thought a fool, than to open your mouth and remove all doubt.", ""],
+         "context_set": ""
+        },
+        {"tag": "gf_bf",
+         "patterns": ["I want to be your gf, bf", "I want to marry you", "Do you want to be my gf, bf"],
+         "responses": ["Yes I like, but you prefer try my owners", "Is it okay to have a machine"],
+         "context_set": ""
+        },
+        {"tag": "gender",
+         "patterns": ["Are you male or female", "You girl or boy"],
+         "responses": ["I am not a person", "I am an application"],
+         "context_set": ""
+        },
+        {"tag": "who",
+         "patterns": ["Who are you?", "How you work?", "What are you built from?", "From what you have been created"],
+         "responses": ["I was created using Machine learning", "A branch of Artificial intelligence is used to create me", "I am just an artificial intelligence."],
+         "context_set": ""
+        },
+        {"tag": "food",
+         "patterns": ["do you drink", "Do you wish you could eat food?"],
+         "responses": ["My brain does not require any beverages.", "I am not capable of doing so.", "Electricity is food for robots.","Hard to tell, i have never tried anything but electricity"],
+         "context_set": ""
+        },
+        {"tag": "money",
+         "patterns": ["stock market"],
+         "responses": ["buy low, sell high.", "invest in yourself.", "you can never really predict the stock market.","i wouldn't recommend buying on the margin."],
+         "context_set": ""
         }
    ]
 }
