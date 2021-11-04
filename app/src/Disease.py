@@ -2,9 +2,10 @@ import joblib
 import numpy as np  # linear algebra
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
+import pickle
+
 
 # filename = 'model.pkl'
-#
 # rf = joblib.load(filename)
 # combined_df = pd.read_csv('combined_df.csv')
 # X = combined_df[['Symptom_1', 'Symptom_2', 'Symptom_3']]  # get symptom values
@@ -12,10 +13,25 @@ from sklearn.preprocessing import LabelEncoder
 # le = LabelEncoder()
 
 
-def predictDisease(lst):
-    filename = 'model.pkl'
+def predictDisease(l):
+    lst = []
+    for i in l:
+        temp = i.split()
+        s = ""
+        for a in temp:
+            if a != temp[len(temp) - 1]:
+                s = s + a + "_"
+            else:
+                s = s + a
+        lst.append(s)
 
-    rf = joblib.load(filename)
+    # filename = 'model.pkl'
+    filename = 'finalized_model.pickle'
+
+
+    # rf = joblib.load(filename)
+    rf = pickle.load(open(filename, 'rb'))
+
     combined_df = pd.read_csv('combined_df.csv')
     X = combined_df[['Symptom_1', 'Symptom_2', 'Symptom_3']]  # get symptom values
     P = X[:]
