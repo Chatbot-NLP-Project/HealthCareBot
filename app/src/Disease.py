@@ -3,13 +3,13 @@ import numpy as np  # linear algebra
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder
 
-filename = 'model.pkl'
+# filename = 'model.pkl'
 
-rf = joblib.load(filename)
-combined_df = pd.read_csv('combined_df.csv')
-X = combined_df[['Symptom_1', 'Symptom_2', 'Symptom_3']]  # get symptom values
-P = X[:]
-le = LabelEncoder()
+# rf = joblib.load(filename)
+# combined_df = pd.read_csv('combined_df.csv')
+# X = combined_df[['Symptom_1', 'Symptom_2', 'Symptom_3']]  # get symptom values
+# P = X[:]
+# le = LabelEncoder()
 
 
 def predictDisease(lst):
